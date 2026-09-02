@@ -22,10 +22,198 @@ const PAPERS=[
 {id:'M01',module:'方法规范',priority:5,title:'TARGET Statement: Transparent Reporting of Observational Studies Emulating a Target Trial',authors:'TARGET Working Group',journal:'JAMA',year:2025,methods:['Reporting guideline','Target trial emulation','Transparency'],question:'Target Trial Emulation研究应该怎样透明、完整地报告设计、因果目标和数据映射？',data:'报告规范',design:'共识/报告指南',sample:'不适用',flow:'报告target trial protocol\n→ estimand\n→ observational emulation\n→ assumptions\n→ analysis\n→ sensitivity analysis\n→ interpretation',result:'为TTE研究提供标准化报告框架，减少设计信息缺失和“只报模型不报目标试验”的问题。',innovation:'把目标试验协议与观察数据模拟之间的映射要求显式纳入报告规范。',limitations:'规范提高透明度但不能替代良好设计和正确因果假设。',reuse:'以后凡是做TTE，都可以直接作为Methods和Supplement的检查清单。',url:'https://jamanetwork.com/journals/jama/fullarticle/2837724'},
 {id:'M02',module:'方法规范',priority:5,title:'TRIPOD+AI: updated guidance for reporting clinical prediction models that use regression or machine learning methods',authors:'TRIPOD+AI Group',journal:'BMJ',year:2024,methods:['Prediction model','Reporting guideline','Machine learning'],question:'预测模型研究如何规范报告数据、建模、验证和性能，覆盖传统回归与机器学习？',data:'报告规范',design:'国际共识指南',sample:'不适用',flow:'明确数据来源\n→ predictors/outcome\n→ missing data\n→ model development\n→ validation\n→ calibration/discrimination\n→ clinical use',result:'TRIPOD+AI更新了预测模型研究的透明报告要求，并覆盖机器学习场景。',innovation:'将传统统计模型和AI/ML统一纳入预测研究报告框架。',limitations:'合规报告并不保证模型低偏倚或有临床价值。',reuse:'做癌症风险预测、预后模型或ML时可以逐条核对。',url:'https://www.bmj.com/content/385/bmj-2023-078378'},
 {id:'M03',module:'方法规范',priority:5,title:'PROBAST+AI: risk of bias and applicability assessment for prediction models',authors:'PROBAST+AI Group',journal:'BMJ',year:2025,methods:['Risk of bias','Prediction model appraisal','AI'],question:'怎样系统判断癌症预测/AI研究有没有偏倚，以及是否适用于目标临床场景？',data:'偏倚评价工具',design:'国际共识工具',sample:'不适用',flow:'participants/data\n→ predictors\n→ outcome\n→ analysis\n→ risk of bias\n→ applicability',result:'提供了适用于统计和AI预测模型的结构化偏倚与适用性评估工具。',innovation:'更新传统PROBAST以覆盖AI方法与现代预测建模实践。',limitations:'需要评价者掌握预测模型方法学，部分判断仍有主观性。',reuse:'以后读任何肿瘤预测模型都建议用它做“批判性阅读”。',url:'https://www.bmj.com/content/388/bmj-2024-082505'}
-,{id:'M04',module:'方法规范',priority:5,title:'CONSORT 2025 statement: updated guideline for reporting randomised trials',authors:'Hopewell S, Chan A-W, Collins GS, et al.',journal:'BMJ',year:2025,methods:['CONSORT 2025','Randomized trial','Reporting guideline','Open science'],question:'随机对照试验（包括肿瘤药物、手术与筛查试验）应如何完整报告设计、实施、分析和结果？',data:'基于系统综述、德尔菲调查与国际共识形成的报告规范',design:'国际共识指南与38项检查清单',sample:'不适用',flow:'标题与摘要\n→ 试验设计与方案注册\n→ 受试者、干预和结局\n→ 样本量与随机化\n→ 统计分析及估计效应\n→ 流程图、伤害和可解释性\n→ 数据、代码与利益冲突开放性',result:'CONSORT 2025以38项清单替代2010版，进一步强调开放科学、患者与公众参与、干预和结局获取方式，以及对估计效应及其不确定性的报告。',innovation:'将估计目标思维、开放科学要求和现代试验实践纳入核心清单，并提供可扩展至不同试验设计的基础框架。',limitations:'CONSORT用于提高报告透明度，不能替代严谨的试验设计，也不是直接评价研究质量或偏倚风险的量表。',reuse:'撰写或审阅肿瘤RCT时，可在方案阶段即按38项清单建立Methods、结果表格、流程图和补充材料目录。',url:'https://www.bmj.com/content/389/bmj-2024-081123'},
-{id:'M05',module:'方法规范',priority:5,title:'SPIRIT 2025 statement: updated guideline for protocols of randomised trials',authors:'Chan A-W, Tetzlaff JM, Gøtzsche PC, et al.',journal:'BMJ',year:2025,methods:['SPIRIT 2025','Trial protocol','Randomized trial','Reporting guideline'],question:'肿瘤随机试验在启动和招募之前，研究方案至少应预先规定哪些关键内容？',data:'基于证据审查、利益相关方反馈与国际共识形成的方案规范',design:'国际共识指南与34项检查清单',sample:'不适用',flow:'行政信息与注册\n→ 研究依据与目标\n→ 试验设计及参与者流程\n→ 干预、结局与时间表\n→ 样本量、随机化和盲法\n→ 数据管理与统计分析\n→ 伦理、传播及开放科学',result:'SPIRIT 2025更新随机试验方案的最低报告要求，并与CONSORT 2025协调，使方案预设、试验实施和最终报告形成连续证据链。',innovation:'强化患者与公众参与、数据共享、研究材料获取和环境可持续性等现代试验治理内容。',limitations:'规范确保方案信息完整透明，但具体设计合理性、统计方法选择和执行质量仍需专业论证与独立审查。',reuse:'设计肿瘤RCT时可把34项清单作为方案骨架，并与CONSORT 2025逐项映射，减少研究完成后选择性报告和关键信息缺失。',url:'https://www.bmj.com/content/389/bmj-2024-081477'}
 ];
 const METHOD_MAP=[
 ['治疗A vs B哪个更好？','Target Trial / IPTW / MSM'],['诊断→复发→转移→死亡？','Multi-state model'],['其他原因死亡会干扰结局？','Competing risk / Fine–Gray'],['标志物不断变化怎么预测？','Joint / Landmark'],['谁真正从治疗中获益？','Causal ML / HTE'],['试验能否边做边调整？','Bayesian adaptive trial'],['谁应该更早筛查？','Risk prediction / PRS'],['AI能否真正用于临床？','External validation / implementation'],['病理+组学+临床如何融合？','Foundation model / multimodal']
 ];
 const LEARNING_PATH=['Target Trial','Competing Risk','Multi-state Model','Joint / Landmark','Risk Prediction','Causal ML','Bayesian Trial','Foundation Model'];
+
+// 深度方法学学习卡。未单独配置的论文会回退到模块级说明，便于后续持续扩充。
+const MODULE_DEEP_DIVE={
+'因果推断与真实世界研究':{
+why:'这类研究的核心不是“把协变量放进回归模型”这么简单，而是先明确一个可回答的因果问题，再让观察性数据尽可能模拟随机试验。重点检查 time zero、治疗策略、随访起点、结局定义和混杂控制是否彼此一致。',
+estimand:'优先明确 ATE / ATT / per-protocol effect / intention-to-treat–like effect，以及分析针对的目标人群。',
+variables:['治疗/暴露策略及起始时间','结局（OS、PFS、复发等）及评估时间','基线混杂因素','时间变化混杂与后续治疗','删失、失访及依从性信息'],
+assumptions:['Consistency：观察到的治疗策略与定义的干预一致','Exchangeability：给定已测协变量后治疗分配近似可交换','Positivity：各协变量组合下均有接受不同治疗的可能','Correct time alignment：eligibility、treatment assignment 与 follow-up 起点一致','模型/权重模型设定基本正确'],
+diagnostics:['检查倾向评分或权重分布及极端权重','比较加权/匹配前后的协变量平衡（如 SMD）','绘制 weighted KM / cumulative incidence','做权重截断、不同模型设定、negative control 或定量偏倚分析等敏感性分析'],
+replication:['R：survival、WeightIt、cobalt、survey、ipw、riskRegression','先画 DAG 或列出最小充分混杂集','先写 target trial protocol，再写统计代码','报告未调整与调整后的绝对风险/风险差，而不只给 HR'],
+reading:'读文章时优先看研究设计图、time zero、eligibility、治疗策略、estimand 和敏感性分析，而不是先看回归表。'
+},
+'生存分析与疾病轨迹':{
+why:'肿瘤结局通常具有时间维度，而且可能同时存在复发、转移、第二原发癌、非癌死亡等多个事件。高级生存方法的价值在于保留这些“何时发生”和“发生哪种事件”的信息。',
+estimand:'常见目标包括 cause-specific hazard、subdistribution hazard、state occupation probability、transition probability、动态生存概率和个体绝对风险。',
+variables:['起始时间与随访时间','事件类型及状态转换时间','删失时间','基线预后因素','重复测量生物标志物/影像指标','治疗变化与并发事件'],
+assumptions:['独立或条件独立删失','比例风险假设（若使用 Cox/Fine–Gray）','多状态模型的 Markov 或 semi-Markov 假设','纵向指标测量误差及缺失机制可合理建模','事件定义与时间记录准确'],
+diagnostics:['检查 PH 假设和 Schoenfeld 残差','比较 cause-specific 与 cumulative incidence 视角','多状态模型中检查转移频数与稀疏性','动态预测用 time-dependent AUC、Brier score、calibration','做 bootstrap / temporal / external validation'],
+replication:['R：survival、cmprsk、riskRegression、mstate、flexsurv、JMbayes2、landmark','先画状态转移图，再决定模型','优先报告绝对风险或状态概率，避免只给 HR','明确 competing event 是否被正确处理'],
+reading:'重点看事件定义、风险集如何构造、竞争事件如何处理、状态转移是否允许，以及模型输出能否回答临床问题。'
+},
+'Bayesian与自适应试验':{
+why:'Bayesian/自适应设计把“边试验、边学习”写进预先规定的统计规则中，可在多个治疗臂、稀有分子亚型或快速变化的治疗环境中提高试验效率。',
+estimand:'关注 posterior probability、response probability、arm superiority probability、predictive probability，以及触发停止/扩展/随机概率更新的阈值。',
+variables:['治疗臂','主要疗效终点','安全性终点','分层/生物标志物','中期分析时间点','先验分布与历史信息'],
+assumptions:['先验与似然模型适当','自适应规则在试验前充分模拟并锁定','中期分析数据及时且质量稳定','操作偏倚受到控制','多重决策下的错误率/决策性能经过模拟评估'],
+diagnostics:['报告 operating characteristics：power、type I error、expected sample size','比较不同先验下 posterior 的敏感性','检查 randomization probability 演化','报告 arm dropping / stopping 的触发过程'],
+replication:['R：rstan/brms、trialr、gsDesign、rpact；复杂平台试验常需自编模拟','先做大量 trial simulation 再确定规则','把统计设计和运行流程一起理解，不只看最终 P 值'],
+reading:'重点看先验、决策阈值、中期分析频率、随机概率如何更新，以及模拟得到的 operating characteristics。'
+},
+'风险预测与精准筛查':{
+why:'风险预测的目标不是找到“显著危险因素”，而是对未来个体风险进行可靠估计，并判断这些风险信息是否能改善筛查或临床决策。',
+estimand:'个体在特定时间窗内的绝对风险；同时关注 discrimination、calibration、overall performance 和 net benefit。',
+variables:['候选预测因子','明确时间窗口的结局','竞争事件（如适用）','训练/验证数据标识','模型输出概率','临床阈值或筛查策略'],
+assumptions:['开发和验证数据代表目标人群','预测因子在预测时点可获得','缺失值处理不会引入严重偏倚','模型复杂度与样本量匹配','外部验证设计合理'],
+diagnostics:['C-index / time-dependent AUC','calibration plot、calibration-in-the-large、slope','Brier score','Decision Curve Analysis','external / temporal / geographic validation'],
+replication:['R：rms、riskRegression、pec、rmda/dcurves、glmnet、mlr3/tidymodels','遵循 TRIPOD+AI；用 PROBAST+AI 做偏倚检查','不要只报告 AUC，必须看校准与临床净获益'],
+reading:'先判断文章究竟是“关联模型”还是“预测模型”；然后检查验证、校准和 DCA 是否完整。'
+},
+'因果机器学习':{
+why:'普通机器学习预测“谁会发生结局”，因果机器学习更关注“同一个患者在不同治疗策略下结局会差多少”，因此适合精准治疗与治疗效应异质性研究。',
+estimand:'ATE、CATE、ITE/individualized treatment effect；核心不是预测 Y，而是估计潜在结局之差。',
+variables:['治疗变量','结局','治疗前混杂因素','效应修饰因素','训练/验证划分','必要时生存时间与删失'],
+assumptions:['可交换性、positivity、consistency 等因果识别假设','训练数据有足够 treatment overlap','效应异质性模型不过拟合','用于估计 nuisance functions 的模型有足够性能'],
+diagnostics:['propensity overlap','cross-fitting / sample splitting','policy value / calibration of treatment effects','不同 learners 的稳健性比较','亚组效应需要独立验证'],
+replication:['R：grf、DoubleML、causalToolbox；Python：econml、causalml','先从 doubly robust / causal forest 入门','不要把普通 SHAP 亚组解释误当成因果治疗效应'],
+reading:'重点区分 prediction heterogeneity 与 treatment effect heterogeneity，并检查作者是否真正解决了混杂与反事实识别问题。'
+},
+'数字病理与Foundation Model':{
+why:'数字病理基础模型的核心价值在于通过大规模预训练得到可迁移表示，再在癌症检测、分型、分子预测、预后等任务上复用。方法学重点是数据切分、域外验证和任务泛化。',
+estimand:'通常不是传统统计 estimand，而是分类/生存/检索性能及跨域泛化能力；预后任务仍应重视 calibration 和外部验证。',
+variables:['WSI/patch','患者级标签','中心/扫描仪/染色批次','分子或临床标签','生存结局','外部数据集'],
+assumptions:['训练-验证切分必须在患者级完成','外部测试集与训练数据无泄漏','标签质量足够','不同中心的 domain shift 被明确评估'],
+diagnostics:['patient-level split','external/OOD benchmark','亚组与中心分层性能','置信区间而非只报单点 AUC','预后任务同时看 C-index、校准与生存曲线'],
+replication:['先复现 frozen-feature + linear probe，再考虑全量微调','重点记录数据切分与预处理','评估多个中心/设备/癌种，而非只做内部随机划分'],
+reading:'不要被模型参数量吸引，优先检查训练数据来源、数据泄漏、外部验证和临床任务设计。'
+},
+'多组学与精准肿瘤':{
+why:'多组学的挑战不是“变量越多越好”，而是如何处理高维、批次效应、缺失模态和过拟合，并最终提炼具有可解释性与可验证性的标志物或风险模型。',
+estimand:'根据问题可为预后风险、分类概率、分子亚型或治疗反应；强调增量预测价值和跨队列泛化。',
+variables:['临床变量','基因组/转录组/蛋白组等多模态数据','批次/中心信息','结局','缺失模态标记'],
+assumptions:['高维特征预处理合理','训练与验证完全分离','批次效应控制适当','特征选择嵌套在交叉验证内','样本量足以支撑模型复杂度'],
+diagnostics:['nested cross-validation','external validation','ablation：逐模态比较增量价值','stability of selected features','calibration / clinical utility'],
+replication:['R：MOFA2、mixOmics、glmnet；Python：scikit-learn、PyTorch','先建立 clinical-only baseline，再逐步加入 omics','所有特征选择必须在训练折内完成'],
+reading:'重点看是否存在数据泄漏、是否真的证明多组学优于临床基线，以及结果是否在独立队列复现。'
+},
+'空间组学与肿瘤微环境':{
+why:'空间组学在单细胞“是什么细胞”的基础上增加“在哪里、和谁相邻”，能够研究肿瘤克隆、免疫细胞和基质之间的空间组织规律。',
+estimand:'常见目标包括空间富集、邻域关联、细胞共定位、空间差异表达、克隆空间扩张等。',
+variables:['空间坐标','基因表达/蛋白表达','细胞类型','患者/切片标识','克隆或CNV状态','组织学区域'],
+assumptions:['空间坐标准确','细胞类型注释可靠','多切片/多患者层级结构被考虑','空间自相关不被当作普通独立观测处理'],
+diagnostics:['患者级而非细胞级推断','置换/空间随机化检验','跨切片重复','批次校正后保留真实空间结构'],
+replication:['R：Seurat、spatstat、BayesSpace；Python：Scanpy、Squidpy','先做患者级描述，再做空间邻域推断','警惕把成千上万个细胞当作独立样本导致伪重复'],
+reading:'优先检查统计单位到底是“细胞、区域还是患者”，以及作者是否正确处理伪重复与空间自相关。'
+},
+'方法规范':{
+why:'方法规范不是统计模型，但它能告诉你一篇研究“最低应该交代什么”。用规范反向阅读论文，可以快速发现设计、分析和报告中的缺口。',
+estimand:'不适用；重点是报告透明度、偏倚风险与适用性。',
+variables:['研究对象/数据来源','预测因子或治疗定义','结局','分析流程','验证与敏感性分析','可重复性信息'],
+assumptions:['规范本身不能保证研究正确','评价时需结合具体临床问题和统计设计'],
+diagnostics:['逐条 checklist 核对','把缺失项记录为阅读笔记','和原文 Supplement / protocol 交叉核对'],
+replication:['把对应指南作为写作清单','在研究设计阶段就使用，而不是投稿前才补','报告指南与偏倚评估工具配套使用'],
+reading:'把指南条目直接映射到 Methods 和 Supplement，可以显著提高批判性阅读效率。'
+}
+};
+
+const DEEP_DIVE={
+A01:{
+why:'Target Trial Emulation（TTE）最适合回答“如果这些真实世界患者当时被随机分配到治疗 A 或 B，会发生什么？”这类问题。它首先解决观察性研究里常见的 immortal time bias、eligibility 与 treatment start 不同步等设计性偏倚，再谈模型。',
+estimand:'根据临床问题可定义 intention-to-treat–like effect 或 per-protocol effect；常见输出为一定时间点的生存概率、风险差/风险比以及 HR。',
+variables:['明确的 eligibility 日期','治疗策略及 grace period','OS/PFS/复发等结局','基线混杂因素','治疗变化、依从性和删失','可能影响后续治疗和结局的时间变化因素'],
+assumptions:['time zero 同时满足入组、治疗分配和随访开始','没有重要未测混杂或其影响可通过敏感性分析界定','治疗策略在数据中可被准确识别','每类患者都有接受比较治疗的现实可能'],
+diagnostics:['制作 target trial protocol 表：Eligibility / Strategies / Assignment / Follow-up / Outcome / Causal contrast / Analysis','检查 treatment overlap 和极端权重','用 SMD 展示平衡','比较不同 grace period、权重截断、结局定义'],
+replication:['先写一页 target trial protocol 再打开 R','基线 IPTW 可用 WeightIt+cobalt；时间变化策略可进一步用 cloning-censoring-weighting','同时报告 1/3/5 年绝对风险和风险差，使结果更有临床意义'],
+reading:'这篇最值得逐句看的不是公式，而是作者如何把临床问题翻译成 target trial protocol。以后写自己的真实世界课题时，可以直接照这个顺序搭 Methods。',
+extensions:'可进一步扩展到序贯治疗、治疗启动时机、动态治疗策略，以及与 g-formula / MSM / clone-censor-weight 等方法结合。'
+},
+A02:{
+why:'这篇把“RCT内部效度”和“真实世界外部效度”连接起来：不是简单问真实世界复制不复制 RCT，而是问不同预后风险患者的治疗效应是否一致。',
+estimand:'trial-specific treatment effect 以及按机器学习预后风险分层后的治疗效应；重点关注 generalizability 与 effect heterogeneity。',
+variables:['RCT eligibility 可映射变量','真实世界治疗方案','生存结局','高维基线临床特征','机器学习预后风险评分','用于 IPTW 的混杂因素'],
+assumptions:['真实世界中治疗组可比','RCT关键入排标准能被EHR准确模拟','预后模型只使用治疗前信息','各风险层中仍有足够 treatment overlap'],
+diagnostics:['对每个被模拟RCT单独检查人群构成和治疗平衡','比较 RCT 与 RWD 的基线风险','按风险层报告 treatment effect 与置信区间','检查风险分层方法变化后结论是否稳定'],
+replication:['适合用医院EHR或区域肿瘤数据库复现“某经典RCT在本地人群是否可推广”','第一步先选一个治疗对照明确、时间窗口清楚的III期RCT','第二步做 eligibility mapping 表，再做 prognostic model 和 TTE'],
+reading:'重点理解 ML 在这里不是为了炫技预测，而是为了刻画患者基线预后风险，并进一步研究 trial generalizability。',
+extensions:'可进一步用 causal forest / meta-learner 直接估计 CATE，再与传统风险分层结果比较。'
+},
+B01:{
+why:'如果一个患者可能经历“无复发→局部复发→远处转移→死亡”，把每个终点拆成互不相关的 Cox 会丢失路径信息。多状态模型把疾病过程作为一个相互连接的转移系统。',
+estimand:'transition-specific hazard、transition probability、state occupation probability、expected length of stay/sojourn time。',
+variables:['每个状态的进入时间','允许/不允许的转移','基线和转移特异协变量','终末事件与删失'],
+assumptions:['Markov：下一步风险只依赖当前状态；或 semi-Markov：还依赖进入当前状态后经历的时间','各转移有足够事件数','删失机制合理'],
+diagnostics:['先画状态图并统计每条箭头上的事件数','比较 Markov 与 semi-Markov 设定','检查是否存在几乎没有事件的转移','报告多个时间点的 state occupation probability'],
+replication:['R：mstate 最适合入门；flexsurv 可做更灵活参数模型','从 illness-death 三状态模型开始，不要一开始定义十几个状态','输出状态概率图通常比一长串 HR 更容易解释'],
+reading:'读任何多状态论文，第一件事都应是看“状态图”。如果状态定义和临床问题不清楚，后面的模型再复杂也没有意义。',
+extensions:'可加入 recurrent events、frailty、非Markov转移、个体动态预测，或与医疗费用/生活质量形成多状态经济学模型。'
+},
+B03:{
+why:'单次 baseline PSA 只能给一次预测；Joint/Landmark 的价值是患者每次复查 PSA 后都能更新风险。Joint model 同时建模“PSA轨迹”和“生存结局”，Landmark 则在一系列时间点重复构建预测。',
+estimand:'给定患者截至 landmark time 的纵向历史后，未来 Δt 时间内进展/死亡的条件概率。',
+variables:['重复 PSA 测量时间与数值','生存/进展时间','删失','治疗及基线特征','landmark time 和 prediction horizon'],
+assumptions:['Joint model：纵向与生存子模型通过随机效应等结构正确关联','Landmark：在每个 landmark 时点幸存者形成新的风险集','重复测量误差与缺失机制可被合理处理'],
+diagnostics:['比较只用最新值、斜率、完整轨迹的模型','time-dependent AUC','prediction error / Brier score','动态校准','不同 landmark / horizon 的性能稳定性'],
+replication:['R：JMbayes2 可做 joint model；landmarking 可基于 survival/riskRegression 自建','可直接换成 CEA、AFP、CA19-9、ctDNA、肿瘤体积或炎症指标','建议同时画个体纵向轨迹和动态风险曲线'],
+reading:'重点观察作者如何定义“历史生物标志物信息”，以及性能提升是否来自真正的纵向信息，而不是只增加更多变量。',
+extensions:'进一步可做 joint model + competing risks、多纵向 biomarker、多状态 joint model，以及动态治疗决策。'
+},
+B04:{
+why:'第二原发肺癌研究中，患者可能在发生第二原发癌前先死亡。把死亡简单当作普通删失会高估累积风险，因此必须明确 competing risk。',
+estimand:'第二原发肺癌的 cumulative incidence / absolute risk；cause-specific hazard 与 subdistribution hazard 回答不同问题。',
+variables:['第二原发肺癌发生时间','竞争死亡时间','删失时间','基线危险因素','外部验证队列标识'],
+assumptions:['事件分类正确','Fine–Gray 与 cause-specific Cox 的解释对象被区分','验证队列结局定义与开发队列尽可能一致'],
+diagnostics:['画 cumulative incidence function 而非只画 KM','比较 cause-specific 与 Fine–Gray 结果','time-dependent AUC、Brier score','calibration + DCA + external validation'],
+replication:['R：cmprsk / riskRegression','如果目标是病因机制，优先理解 cause-specific hazard；如果目标是预测绝对风险，累积发生概率更关键','DCA 用来判断模型是否值得影响筛查决策'],
+reading:'这篇适合当“高质量临床预测模型模板”来拆：从 competing risk 到 external validation 再到 DCA，链条很完整。',
+extensions:'可用于第二原发癌、癌症特异死亡、复发与非癌死亡、器官移植后肿瘤等场景。'
+},
+C01:{
+why:'5个治疗组若固定随机直到结束，会把很多患者分配到表现较差的方案。Bayesian adaptive design允许随着数据累积更新各治疗组的后验疗效概率，并按预先规则调整随机概率。',
+estimand:'各治疗臂相对优效的 posterior probability，以及达到预设成功/无效阈值的概率。',
+variables:['治疗臂','主要反应/生存终点','中期分析时间','先验参数','安全性指标'],
+assumptions:['自适应规则预先定义','先验选择合理并做敏感性分析','中期数据可及时获得','后验更新模型与结局分布匹配'],
+diagnostics:['试验前模拟 type I error / power / sample size','画每次中期分析后各 arm 分配概率','比较不同先验','记录是否触发 futility / superiority stopping'],
+replication:['学习这类论文时最好自己做一个简化版 trial simulation','先模拟固定随机，再加入 response-adaptive randomization，看样本分配如何变化','不建议直接从复杂平台试验代码开始'],
+reading:'不要只看“Bayesian”三个字，真正要看的是 decision rule：什么时候更新、阈值是什么、达到阈值后会发生什么。',
+extensions:'可延伸到 seamless phase II/III、basket/umbrella/platform trial，以及 biomarker-adaptive randomization。'
+},
+D01:{
+why:'PRS文章真正有价值的地方不是“遗传变量显著”，而是把遗传风险转成绝对风险和筛查起始年龄，从 prediction 走到 decision。',
+estimand:'某年龄前/未来时间窗乳腺癌绝对风险，以及达到预设筛查风险阈值的年龄。',
+variables:['PRS','家族史','高外显率致病变异','年龄','癌症事件','竞争死亡（如模型考虑）'],
+assumptions:['PRS在目标人群具有可迁移性','遗传风险与基线发生率结合方式正确','筛查阈值具有临床/公共卫生意义'],
+diagnostics:['不同遗传风险组的绝对风险曲线','calibration','不同阈值下筛查人群比例','跨祖源/外部人群验证'],
+replication:['如果没有基因数据，也可以用临床风险评分完成“风险阈值→筛查策略”框架','关键是将预测结果映射为可执行决策，而非停留在 OR/HR','以后可结合成本效果分析'],
+reading:'重点关注“模型输出如何变成筛查建议”。这是预测模型从统计结果走向公共卫生策略的关键一步。',
+extensions:'可迁移到肺癌低剂量CT筛查、肝癌高危人群监测、结直肠癌个体化起始年龄。'
+},
+E01:{
+why:'传统 ML 可告诉你谁预后差，却不能自动告诉你“给这个人治疗A会不会比B更好”。Causal ML的目标是估计反事实差异，因此与精准治疗天然契合。',
+estimand:'CATE(x)=E[Y(1)-Y(0)|X=x]；人群平均后可得到 ATE，个体/亚组层面用于治疗选择。',
+variables:['治疗 A/B','结局','所有重要治疗前混杂因素','候选效应修饰因素','训练/验证分割'],
+assumptions:['无未测混杂','positivity','consistency','nuisance models（propensity/outcome）至少部分正确','效应异质性不是数据挖掘产物'],
+diagnostics:['propensity overlap','honest/cross-fitted estimation','CATE calibration / RATE / policy value','亚组效应的外部或独立验证','和传统 interaction model 比较'],
+replication:['先用模拟数据理解 ATE 与 CATE','R：grf；Python：EconML','先做 doubly robust learner / causal forest，再考虑更复杂深度模型','用 policy value 检查“按模型选治疗”是否真的提升结局'],
+reading:'看到“AI发现某亚组获益更多”时，要检查它究竟是预测分层还是因果 CATE。没有治疗对照和识别假设，通常不能称为个体化治疗效应。',
+extensions:'可与 survival analysis 结合做 survival causal forest，也可用于 dynamic treatment regime / individualized treatment rule。'
+},
+F01:{
+why:'CHIEF的重点不是单一癌种AUC，而是通过大规模病理预训练形成可复用的通用表示，再跨癌种、跨任务评估诊断和预后能力。',
+estimand:'不同下游任务的预测性能与跨数据集泛化；生存任务关注风险排序和外部验证。',
+variables:['WSI','patch/slide representation','癌症/分子标签','患者结局','中心来源','外部验证数据集'],
+assumptions:['患者级切分防止泄漏','预训练数据和测试数据无重叠','不同中心/扫描仪差异被考虑','下游标签定义一致'],
+diagnostics:['内部 vs 外部数据性能差异','不同癌种/中心/人群亚组','linear probe vs fine-tune','生存任务同时评估 C-index 与校准'],
+replication:['如果没有GPU集群，不必复现预训练；可使用公开/预训练 embedding 做下游生存或分类','先学“数据切分+external validation+benchmark”，比从Transformer结构入手更适合统计背景'],
+reading:'重点检查数据规模之后的“验证设计”。顶刊病理AI真正难的是泛化，而不是内部AUC做到0.99。',
+extensions:'可和基因组、EHR、文本报告形成 multimodal model，也可研究 domain adaptation、公平性和罕见癌 few-shot learning。'
+},
+M02:{
+why:'TRIPOD+AI可以直接作为你以后做肿瘤预测模型的写作目录。它提醒研究者清楚报告数据来源、样本量、缺失值、模型开发、验证、性能和可用性。',
+estimand:'不适用；它规范的是“预测模型研究需要被透明报告的内容”。',
+variables:['适用于回归和机器学习预测模型的所有核心报告元素'],
+assumptions:['遵循 TRIPOD+AI 不等于模型没有偏倚；应与 PROBAST+AI 配套使用'],
+diagnostics:['读预测论文时可把每个条目打勾/打叉','特别关注是否有外部验证、校准、模型完整表达和数据可获得性'],
+replication:['以后写 Methods 之前先建立 TRIPOD+AI checklist','把 checklist 放到项目 README 或研究方案里持续更新'],
+reading:'如果一篇AI预测论文只有AUC、没有校准/验证/阈值/完整模型信息，通常距离临床可用还有很远。',
+extensions:'可与 DECIDE-AI / CONSORT-AI 等临床实施规范联合使用。'
+}
+};
+
+function getDeepDive(p){return {...(MODULE_DEEP_DIVE[p.module]||{}),...(DEEP_DIVE[p.id]||{})};}
