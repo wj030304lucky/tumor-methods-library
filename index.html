@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>肿瘤研究方法学文献库</title>
+  <meta name="description" content="面向肿瘤研究与卫生统计学习的长期方法学文献库：因果推断、生存分析、贝叶斯自适应试验、风险预测、因果机器学习、数字病理、多组学与空间组学。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Cancer Research Methodology Library</div>
+        <h1>肿瘤研究方法学文献库</h1>
+        <p class="subtitle">不是按癌种堆论文，而是按“以后能拿来做课题的方法”组织。适合长期积累、复习与选题。</p>
+      </div>
+      <div class="hero-meta">
+        <div><span>版本</span><strong id="versionLabel">v1.2</strong></div>
+        <div><span>最后整理</span><strong id="lastUpdated">—</strong></div>
+        <div><span>文献数</span><strong id="paperCount">0</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar card">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="搜索：Target Trial / Cox / Bayesian / JCO / lung cancer…" />
+      </div>
+      <div class="toolbar-actions">
+        <select id="moduleFilter" aria-label="按模块筛选"></select>
+        <select id="priorityFilter" aria-label="按优先级筛选">
+          <option value="all">全部优先级</option>
+          <option value="5">★★★★★ 必读</option>
+          <option value="4">★★★★ 重点</option>
+          <option value="3">★★★ 了解</option>
+        </select>
+        <select id="statusFilter" aria-label="按学习状态筛选">
+          <option value="all">全部学习状态</option>
+          <option value="unread">未读</option>
+          <option value="reading">在读</option>
+          <option value="done">已读</option>
+          <option value="favorite">仅收藏</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="dashboard-grid">
+      <div class="card stat"><span>已读</span><strong id="doneCount">0</strong></div>
+      <div class="card stat"><span>在读</span><strong id="readingCount">0</strong></div>
+      <div class="card stat"><span>收藏</span><strong id="favoriteCount">0</strong></div>
+      <div class="card stat"><span>必读未完成</span><strong id="mustReadLeft">0</strong></div>
+    </section>
+
+    <section class="card method-map">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Method Map</div>
+          <h2>先判断研究问题，再选方法</h2>
+        </div>
+      </div>
+      <div class="method-grid" id="methodMap"></div>
+    </section>
+
+    <section class="card learning-path">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Recommended Path</div>
+          <h2>第一轮学习路径</h2>
+          <p>建议先把传统生存分析升级，再进入因果推断和精准肿瘤。</p>
+        </div>
+      </div>
+      <div class="path" id="learningPath"></div>
+    </section>
+
+    <section>
+      <div class="section-head list-head">
+        <div>
+          <div class="eyebrow">Literature</div>
+          <h2>核心文献</h2>
+        </div>
+        <div id="resultCount" class="result-count"></div>
+      </div>
+      <div id="paperList" class="paper-list"></div>
+    </section>
+
+    <section class="card update-card">
+      <div>
+        <div class="eyebrow">Maintenance</div>
+        <h2>长期更新方式</h2>
+        <p>文献数据集中放在 <code>data.js</code>。以后只需新增一条文献对象，页面会自动更新；你的学习状态、笔记和收藏保存在浏览器本地。</p>
+      </div>
+      <div class="update-actions">
+        <button id="exportBtn" class="btn">导出学习数据</button>
+        <label class="btn ghost" for="importInput">导入学习数据</label>
+        <input id="importInput" type="file" accept="application/json" hidden />
+        <button id="resetBtn" class="btn ghost danger">清空本地学习记录</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="paperDialog" class="dialog">
+    <form method="dialog" class="dialog-shell">
+      <button class="dialog-close" value="cancel" aria-label="关闭">×</button>
+      <div id="dialogContent"></div>
+    </form>
+  </dialog>
+
+  <footer>
+    <p>肿瘤研究方法学文献库 · 面向选题、方法学习与长期积累</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
